@@ -1,92 +1,85 @@
-Timemaru タイムマル
-Timemaru is a browser extension that combines your daily productivity tools with a fun, interactive floating companion. Manage your tasks and schedule while a cute pixel art demon floats around on your screen, ready to assist.
+# 👾 Timemaru | タイムマル
 
-This project was developed as a proof-of-concept for a fully interactive browser extension using Manifest V3, pure JavaScript, HTML, and CSS.
+<p align="center">
+  <img src="https://img.shields.io/badge/Manifest-V3-purple?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Manifest V3" />
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla-yellow?style=for-the-badge&logo=javascript&logoColor=black" alt="Vanilla JS" />
+  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</p>
 
-✨ Features
-Timemaru is split into two main components: the Sidebar Panel for productivity and the Floating Companion for fun and quick access.
+---
 
-Sidebar Panel
-The main interface for all your productivity needs, accessible by clicking the extension icon or your floating demon.
+`timemaru` is an interactive browser extension designed as a proof-of-concept for Manifest V3. It elegantly marries standard productivity tools—like schedules, tasks, and weather forecasting—with a charming, screen-roaming pixel art demon companion that reacts dynamically to webpage elements and user actions.
 
-📅 Today's Summary: An at-a-glance view of your schedule and most urgent tasks for the day.
+---
 
-✅ To-Do List: A simple task manager with due dates.
+## 🔮 Core Features
 
-🗓️ Weekly Schedule: A visual planner for your week.
+Timemaru is split into two primary modules: the **Sidebar Panel** (for productivity) and the **Floating Companion** (for interactive fun and quick actions).
 
-☀️ Weather Widget: Real-time weather information based on a city you set.
+### 🎛️ Sidebar Panel
+The central control hub for your productivity, opened easily by clicking the extension icon or clicking your floating companion.
+* **📅 Today's Summary** – Get an at-a-glance view of your schedule and most urgent tasks for the day.
+* **✅ To-Do List** – A clean, straightforward task manager equipped with due date tracking.
+* **🗓️ Weekly Schedule** – Plan and visualize your entire week in a cohesive layout.
+* **☀️ Weather Widget** – Real-time weather forecasting based on your designated location.
+* **⚙️ Settings** – Personalize your demon companion's name and set your local city.
+* **😈 Unleash a Demon** – Need more company? Spawn additional floating demons directly from the sidebar.
 
-⚙️ Settings: Customize your character's name and set your location.
+### 😈 Floating Companion (The Demon)
+A pixel art companion that lives, roams, and interacts with the pages you browse.
+* **🖱️ Interactive** – Click your demon companion to watch it bounce or to quickly toggle open the productivity sidebar.
+* **🖐️ Draggable** – Drag and drop the demon anywhere across your active browser viewport.
+* **🍴 Predator Mode** – Unleash multiple demons and watch them interact: older demons will consume newer ones, increasing in scale.
+* **🖼️ Image Hunter** – When feeling hungry, the demon will slowly crawl towards nearby images on the web page.
+* **❌ Banishment** – Right-click any demon companion to instantly banish them from the viewport.
 
-😈 Unleash a Demon: Spawn more floating companions onto your screen directly from the sidebar.
+---
 
-Floating Companion (The Demon)
-A cute pixel art demon that lives on every webpage you visit.
+## 💻 Tech Stack
 
-🖱️ Interactive: Click the demon to make it bounce and open the Timemaru sidebar.
+- **Extension Architecture:** Manifest V3
+- **Frontend & Styling:** HTML5 & CSS3 (featuring custom CSS Variables for themes and animations)
+- **Logic & Interactions:** Vanilla JavaScript (ES6+) — pure browser performance without heavy external frameworks.
 
-🖐️ Draggable: Drag and drop your demon anywhere on the screen.
+---
 
-🍴 Predator Mode: When multiple demons are on screen, they will interact! The older demon will "eat" the newer one and grow in size.
+## 🚀 Installation & Sideloading
 
-🖼️ Image Hunter: The demon will occasionally get "hungry" and slowly move towards an image on the page.
+Since Timemaru is a developer proof-of-concept, it is loaded manually. Follow these quick steps to set it up:
 
-❌ Banish: Right-click a demon to banish it from your screen.
+1. **Download the Repository:** Clone this repository or download and extract the repository ZIP/RAR contents.
+2. **Access Extension Management:** Navigate to the extensions page in your browser of choice:
+   - **Chrome:** `chrome://extensions`
+   - **Edge:** `edge://extensions`
+   - **Brave:** `brave://extensions`
+3. **Toggle Developer Mode:** Enable the **Developer mode** switch (typically located in the top-right corner).
+4. **Load Unpacked:** Click **Load unpacked** and select the main `timemaru-extension` folder containing the unzipped files.
+5. **Begin:** Pin the purple demon icon to your toolbar and watch your companion appear!
 
-🚀 Installation (Sideloading)
-Since this extension is not on the Chrome Web Store, you need to load it manually. It's easy!
+---
 
-Download the Repository: Download this project as a ZIP file and unzip it, or clone the repository to your local machine.
+## 🛠️ How to Use
 
-Open Your Browser's Extension Page:
+- **Toggle Sidebar:** Left-click the extension icon in your toolbar, or left-click any floating demon.
+- **Manage Tasks:** Open the *To-Do List*, input your task and optional due date, and click **Add**.
+- **Configure Weather:** Open *Settings*, input your city (e.g., `"Jakarta"`), and click **Save** to enable the weather widget.
+- **Demon Actions:**
+  - **Drag:** Hold left-click and move your mouse.
+  - **Banish:** Right-click the demon.
+  - **Multiply:** Click **Unleash a Demon** in the sidebar.
 
-Chrome: chrome://extensions
+---
 
-Edge: edge://extensions
+## 🇮🇩 (Bahasa Indonesia) Tentang Timemaru
 
-Brave: brave://extensions
-
-Enable Developer Mode: Find the "Developer mode" toggle switch (usually in the top-right corner) and turn it on.
-
-Load the Extension: Click the "Load unpacked" button that appeared.
-
-Select the Folder: In the file selection window, navigate to and select the main timemaru-extension folder. Do not select a file inside it, select the entire folder.
-
-Done! The Timemaru icon (a purple demon head) will appear in your browser's toolbar. A demon companion will now appear on your web pages.
-
-🛠️ How to Use
-Open the Sidebar: Click the Timemaru icon in your toolbar, or left-click any floating demon.
-
-Add a Task: Open the To-Do List section, type your task, optionally add a due date, and click "Add".
-
-Set Your City: Open the Settings section, type your city name (e.g., "Jakarta"), and click "Save". The weather will update automatically.
-
-Interact with Demons:
-
-Drag: Click and hold the left mouse button.
-
-Banish: Click with the right mouse button.
-
-Spawn More: Click the "Unleash a Demon" button in the sidebar.
-
-💻 Tech Stack
-Manifest V3
-
-HTML5
-
-CSS3 (with CSS Variables for theming and animations)
-
-Vanilla JavaScript (ES6+) - No frameworks, just pure browser power!
-
-👨‍💻 Developer
-This extension was lovingly crafted by:
-
-@mqrbxn / @beenspace / @muqorrobinize (github)
-
-(Bahasa Indonesia)
-Tentang Timemaru
 Timemaru adalah ekstensi browser yang menggabungkan alat produktivitas harian Anda (jadwal, daftar tugas, cuaca) dengan teman virtual berupa iblis pixel art yang interaktif dan melayang di setiap halaman web.
 
-Cara Pemasangan
-Ikuti langkah-langkah pada bagian Installation di atas. Prosesnya sama dan mudah, cukup muat folder ekstensi melalui halaman "Mode Pengembang" di browser Anda.
+### Cara Pemasangan:
+Ikuti langkah-langkah pada bagian **Installation** di atas. Cukup muat folder ekstensi melalui halaman "Mode Pengembang" di browser Anda.
+
+---
+
+## 👨‍💻 Developer & Credits
+
+Lovingly crafted by **Muqorrobin** ([@mqrbxn](https://github.com/mqrbxn) / [@beenspace](https://github.com/beenspace)).
